@@ -1,0 +1,48 @@
+.l-container {
+	width: 100%;
+	margin: 0 auto;
+	padding: $spacing-3 $spacing-4;
+	position: relative;
+
+	@media only screen and (min-width: $brk-md) {
+		width: 90vw;
+	}
+
+	@media only screen and (min-width: $brk-lg) {
+		width: 85vw;
+		max-width: 1280px;
+	}
+}
+
+.l-container--fluid {
+	width: 100%;
+	padding: $spacing-4 $spacing-3;
+}
+
+
+/* Section */
+.l-section {
+	padding: $spacing-7 $spacing-2;
+}
+
+.l-section__header {
+	text-align: center;
+	margin-bottom: $spacing-4;
+}
+
+.l-section__header--left {
+	text-align: left;
+}
+
+.l-section__body {
+	padding: $spacing-4 0;
+}
+
+
+.l-title {
+	padding: $spacing-4 0;
+	text-align: center;
+	background: linear-gradient(125deg, $primary-dark-1 35%, $primary 40%);
+	color: $light-4;
+	font-family: "Trebuchet MS", Arial;
+}

@@ -1,0 +1,64 @@
+// Breakpoints
+$brk-xl: 1280px;
+$brk-lg: 992px;
+$brk-md: 768px;
+$brk-sm: 661px;
+
+// Shadow
+$shadow-lg: 0 8px 20px hsla(0, 4%, 3%, 0.15);
+$shadow-md: 0 4px 12px hsla(0, 4%, 3%, 0.15);
+$shadow-sm: 0 2px 4px hsla(0, 4%, 3%, 0.15);
+
+// Primary colors
+$primary: hsl(10, 85%, 55%);
+$primary-light-1: hsl(13, 90%, 70%);
+$primary-light-2: hsl(17, 96%, 79%);
+$primary-light-3: hsl(13, 100%, 90%);
+$primary-dark-1: darken($primary, 9%);
+$primary-dark-2: darken($primary, 17%);
+$primary-dark-3: darken($primary, 28%);
+
+// Grey
+$grey:    hsl(200, 3%, 49%);
+$dark-1:  hsl(194, 2%, 29%);
+$dark-2:  hsl(188, 1%, 20%);
+$dark-3:  hsl(182, 2%, 11%);
+$dark-4:  hsl(182, 0%, 6%);
+$light-1:  hsl(204, 4%, 72%);
+$light-2:  hsl(210, 4%, 85%);
+$light-3:  hsl(210, 5%, 94%);
+$light-4:  hsl(215, 6%, 98%);
+// $dark-2:  #44464c;
+// $dark-3:  #2a2a2e;
+// $light-1: #bfc2c6;
+// $light-2: #e2e3e4;
+// $light-3: #f4f5f6;
+
+// Font size
+$fs-1: 12px;
+$fs-2: 14px;
+$fs-3: 16px;
+$fs-4: 18px;
+$fs-5: 20px;
+$fs-6: 24px;
+$fs-7: 32px;
+$fs-8: 36px;
+$fs-9: 48px;
+$fs-10: 60px;
+$fs-11: 72px;
+
+// Border
+$radius-sm: 6px;
+$radius-md: 12px;
+$radius-lg: 18px;
+
+// Spacing
+$spacing-1: 0.25rem;
+$spacing-2: 0.50rem;
+$spacing-3: 0.75rem;
+$spacing-4: 1.00rem;
+$spacing-5: 1.50rem;
+$spacing-6: 2.00rem;
+$spacing-7: 3.00rem;
+$spacing-8: 4.00rem;
+$spacing-9: 6.00rem;
