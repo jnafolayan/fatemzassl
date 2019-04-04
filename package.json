@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "heroku-start": "npm run build && node server",
+    "preinstall": "yarn global add vue-cli-service",
+    "heroku-start": "yarn run build && node server",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
