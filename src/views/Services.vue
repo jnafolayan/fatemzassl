@@ -167,8 +167,7 @@ export default {
       }
     },
     animate(elt, props, duration, step) {
-      let k = 0,
-        start, now, delay, lt, elapsed;
+      let start, now, lt, elapsed;
 
       requestAnimationFrame(tick);
 

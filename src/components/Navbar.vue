@@ -30,7 +30,7 @@
             FATEMZA SSL
           </router-link>
 
-          <button class="c-navbar__toggle">
+          <button class="c-navbar__toggle" @click="toggleMenu">
             <span></span>
             <span></span>
             <span></span>
@@ -38,7 +38,7 @@
         </div>
 
         <!-- Navbar collapse -->
-        <div class="c-navbar__collapse">
+        <div class="c-navbar__collapse" ref="navbarCollapse">
           <ul class="c-nav">
             <li>
               <router-link class="c-nav__link" to="/">Home</router-link>
@@ -61,6 +61,17 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    toggleMenu() {
+      const $ele = this.$refs.navbarCollapse;
+      $ele.classList.toggle("open");
+    }
+  }
+}
+</script>
 
 <style lang="scss">
 @import "../assets/styles/screen.scss";
@@ -123,6 +134,8 @@
   width: 35px;
   background: transparent;
   border: none;
+  cursor: pointer;
+  outline: none;
 
   > span {
     display: block;
@@ -142,7 +155,32 @@
 
   @media only screen and (max-width: $brk-md) {
     display: none;
-  }  
+
+    .c-nav {
+      float: none;
+      clear: both;
+      margin-top: $spacing-3;
+      border-top: 1px solid #eee;
+    }
+
+    &.open {
+      display: block;
+      width: 100%;
+
+      li {
+        display: block;
+
+        .c-nav__link {
+          display: block;
+          width: 100%;
+          border-bottom: none;
+          margin: 0;
+          padding: $spacing-2 0;
+          font-weight: normal;
+        }
+      }
+    }
+  }
 }
 
 .c-nav {
