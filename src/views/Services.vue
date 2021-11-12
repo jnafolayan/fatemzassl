@@ -151,13 +151,10 @@ export default {
       target.classList.add("c-accordion__tab--expanded");
       
       const height = targetBody.offsetHeight;
-      console.log(height);
-
 
       if (target != expanded) {
         targetBody.style.height = "0px";
         this.animate(target, {}, 200, k => {
-          console.log(`${height * k | 0}px`);
           targetBody.style.height = `${height * k | 0}px`;
         });
       }
