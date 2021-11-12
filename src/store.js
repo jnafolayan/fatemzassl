@@ -7,9 +7,9 @@ const store = new Vuex.Store({
   state: {
     contact: {
       email: "info@fatemzassl.com",
-      phone: ["+234 803 205 6101 ", "+234 818 935 6695"],
+      phone: ["+234 8032056101", "+234 8071601767"],
       facebook: "asafa.adeniyi",
-      address: "1, Kodesho str. Ikeja Lagos. 113, Ijede rd., Jesus Pavilion Plaza, Cele B/Stop, Ikorodu Lagos."
+      address: "120/12 Bosun Adekoya Street, Oniru Lekki, Lagos. 6, Hoster Street Off Ijede Road Omitoro, Ikorodu Lagos."
     },
     year: new Date().getUTCFullYear()
   }
