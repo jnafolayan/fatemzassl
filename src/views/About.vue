@@ -9,7 +9,7 @@
       <div class="l-section">
         <div class="l-section__body">
           <p>
-            Aspilos Technologies Limited is poised to providing you Technology
+            Fatemza Space Solutions Limited is poised to providing you Technology
             Consulting Services and solutions, bearing in mind premium service
             quality, unique value offering via strategic alliances with cutting
             edge OEMs and the deployment of highly skilled manpower. With vast
