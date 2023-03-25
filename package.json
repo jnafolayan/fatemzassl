@@ -2,6 +2,9 @@
   "name": "fatemzassl",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "^16"
+  },
   "scripts": {
     "preinstall": "yarn global add @vue/cli-service",
     "postinstall": "yarn run build",
