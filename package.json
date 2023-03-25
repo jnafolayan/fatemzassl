@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "engines": {
-    "node": "^16"
+    "node": "^18"
   },
   "scripts": {
     "preinstall": "yarn global add @vue/cli-service",
@@ -29,7 +29,7 @@
     "eslint": "^7.14.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-vue": "^8.0.3",
-    "node-sass": "^6.0.1",
+    "sass": "^1.60.0",
     "sass-loader": "^10",
     "vue-template-compiler": "^2.6.14"
   }
