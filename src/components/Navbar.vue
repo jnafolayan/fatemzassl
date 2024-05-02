@@ -4,22 +4,22 @@
     <div class="c-navbar__top">
       <div class="l-container">
         <span class="c-navbar__top-left">
-          <a href="mailto:info@fatemzassl.com">
+          <a :href="'mailto:' + $store.state.contact.email">
             <i class="fa fa-inbox"></i>
-            info@fatemzassl.com
+            <span>{{ $store.state.contact.email }}</span>
           </a>
         </span>
-        <span class="c-navbar__top-right">
+        <!-- <span class="c-navbar__top-right">
           <a href="#">
             <i class="fa fa-linkedin"></i>
           </a>
-          <a href="https://www.facebook.com/asafa.adeniyi">
+          <a href="#">
             <i class="fa fa-facebook"></i>
           </a>
           <a href="#">
             <i class="fa fa-twitter"></i>
           </a>
-        </span>
+        </span> -->
       </div>
     </div>
     <!-- Navbar main -->

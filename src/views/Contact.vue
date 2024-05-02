@@ -13,7 +13,8 @@
             <li>
               <a :href="'mailto:' + $store.state.contact.email">
                 <i class="fa fa-inbox"></i> 
-                <span>{{ $store.state.contact.email }}</span></a>
+                <span>{{ $store.state.contact.email }}</span>
+              </a>
             </li>
             <li>
               <i class="fa fa-phone"></i>
