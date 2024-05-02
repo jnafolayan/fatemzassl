@@ -17,13 +17,17 @@
               </a>
             </li>
             <li>
-              <a href="mailto:info@fatemzassl.com">
+              <a :href="'mailto:' + $store.state.contact.email">
                 <i class="fa fa-inbox"></i> 
                 <span>{{ $store.state.contact.email }}</span></a>
             </li>
             <li>
               <i class="fa fa-phone"></i>
-              <span>{{ $store.state.contact.phone.join(", ") }}</span>
+              <div class="phones">
+                <a v-for="phone in $store.state.contact.phone" :key="phone" :href="'tel:' + phone">
+                  {{ phone }}
+                </a>
+              </div>
             </li>
           </ul>
 
@@ -47,9 +51,12 @@
   margin: $spacing-5 0;
 
   a {
-    display: block;
     font-size: $fs-3;
     padding: $spacing-1 0;
+  }
+
+  li {
+    margin-bottom: $spacing-1;
   }
 
   .fa {
@@ -62,6 +69,25 @@
     color: $primary-dark-3;
     font-weight: bold;
     letter-spacing: 0.05rem;
+  }
+  
+  .phones {
+    display: inline;
+    color: $primary-dark-3;
+
+    a {
+      color: $primary-dark-3;
+    }
+
+    a:not(:last-child) {
+      margin-right: $spacing-1;
+
+      &::after {
+        display: inline;
+        content: ",";
+        margin-left: -$spacing-1;
+      }
+    }
   }
 }
 </style>
