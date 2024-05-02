@@ -11,12 +11,6 @@
           <p>You can contact using the following media:</p>
           <ul class="list">
             <li>
-              <a href="https://www.facebook.com/asafa.adeniyi">
-                <i class="fa fa-facebook"></i> 
-                <span>{{ $store.state.contact.facebook }}</span>
-              </a>
-            </li>
-            <li>
               <a :href="'mailto:' + $store.state.contact.email">
                 <i class="fa fa-inbox"></i> 
                 <span>{{ $store.state.contact.email }}</span></a>
